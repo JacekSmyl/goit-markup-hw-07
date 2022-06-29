@@ -280,83 +280,82 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container container-item">
-          <h2 class="title-secondary">Nasi klienci</h2>
+      <section class="section">
+        <div class="container">
+          <h2 class="section-heading ">Nasi klienci</h2>
           <ul class="customers">
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo"></use>
               </svg>
             </li>
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo1"></use>
               </svg>
             </li>
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo2"></use>
               </svg>
             </li>
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo3"></use>
               </svg>
             </li>
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo4"></use>
               </svg>
             </li>
-            <li class="customers-box flex">
-              <svg class="icon-customers" width="106" height="60">
+            <li class="customers__list">
+              <svg class="customers__icons " width="106" height="60">
                 <use href="./images/sprite-defs.svg#icon-Logo5"></use>
               </svg>
             </li>
           </ul>
         </div>
       </section>
-    </main>
-    <footer class="footer-color">
-      <div class="container flex-footer">
-        <div class="footer-position">
+    <footer class="footer">
+      <div class="container container--footer">
+        <div class="container-footer">
           <a
-            class="footer-style-item"
-            href="https://jaceksmyl.github.io/goit-markup-hw-01/"
-            ><span class="logo">Web</span
-            ><span class="logo-item">Studio</span></a
+            class="container-footer__decoration"
+            href="index.html"
+            ><span class="footer__logo logo--blue ">Web</span
+            ><span class="footer__logo logo--white">Studio</span></a
           >
-          <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-          <a class="contacts" href="mailto:info@example.com">info@example.com</a
+          <address class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+          <a class="footer__contacts" href="mailto:info@example.com">info@example.com</a
           ><br />
-          <a class="contacts" href="tel:+48111111111">+48 111 111 111</a>
+          <a class="footer__contacts" href="tel:+48111111111">+48 111 111 111</a>
         </div>
-        <div class="footer-position footer-position-item">
-          <p class="style">Dołącz do nas</p>
-          <a class="icon-footer-item">
-            <svg class="icon-footer">
+        <div class="container-footer container-footer--item">
+          <h3 class="footer__heading">Dołącz do nas</h3>
+          <a class="footer__social ">
+            <svg class=" footer__icon">
               <use href="./images/sprite-defs.svg#icon-instagram"></use>
             </svg>
           </a>
-          <a class="icon-footer-item">
-            <svg class="icon-footer">
+          <a class="footer__social ">
+            <svg class="footer__icon">
               <use href="./images/sprite-defs.svg#icon-twitter"></use>
             </svg>
           </a>
-          <a class="icon-footer-item">
-            <svg class="icon-footer">
+          <a class="footer__social ">
+            <svg class="footer__icon">
               <use href="./images/sprite-defs.svg#icon-facebook"></use>
             </svg>
           </a>
-          <a class="icon-footer-item">
-            <svg class="icon-footer">
+          <a class="footer__social ">
+            <svg class="footer__icon">
               <use href="./images/sprite-defs.svg#icon-linkedin"></use>
             </svg>
           </a>
         </div>
-        <div class="container-footer-form">
-          <h3 class="newsletter__text" >Zapisz się do newslettera</h3>
+        <div class=" container-footer container-footer-form">
+          <h3 class="footer__heading" >Zapisz się do newslettera</h3>
           <div class="footer-form">
             <form
               name="newsletter"
@@ -364,11 +363,11 @@
               method="POST"
             >
               <label>
-                <input  class="input__frame"  type="email" name="email" placeholder="E-mail" />
+                <input  class=" footer-form_input"  type="email" name="email" placeholder="E-mail" />
               </label>
 
-              <button type="submit">
-                <span class="button__signup">Zapisz się</span>
+              <button  class="footer-form__button" type="submit">
+                <span class="footer-form__signup">Zapisz się</span>
                 <svg>
                   <use href="./images/sprite2.svg#icon-send"></use>
                 </svg>
@@ -381,40 +380,43 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-btn-item">
+        <button type="button" class="modal__close-btn" data-modal-close>
+          <svg class="modal__close-btn-item">
             <use href="./images/sprite-close.svg#icon-icon-close"></use>
           </svg>
         </button>
         <form class="modal-form" name="signup-form"
           action="http://localhost:3000/posts"
           method="POST">
-            <h3 class="modal__text">Zostaw swoje dane w formularzu poniżej</h3>
-          <label class="modal__label" for="name">Imie 
-           <svg  class="modal__icon--name" width="12" height="12">
+
+           <h3 class="modal-form__text">Zostaw swoje dane w formularzu poniżej</h3>
+
+        <label class="modal__label" for="name">Imie 
+           <svg  class="modal-form__icon-name" width="12" height="12">
             <use href="./images/sprite2.svg#icon-item "></use>
             </svg>
             <input class="modal__input" type="text" id="name" name="name" required="" /> 
-          </label>
-          <label class="modal__label" for="phone">Telefon 
-            <svg class="modal__icon--phone" width="13" height="13">
+        </label>
+
+        <label class="modal__label" for="phone">Telefon 
+            <svg class="modal-form__icon-phone" width="13" height="13">
               <use href="./images/sprite2.svg#icon-phone "></use>
               </svg>
               <input  class="modal__input"  type="tel" id="name" name="phone" required="" />
             </label>
-          <label class="modal__label" for="email">Email
-            <svg class="modal__icon--mail" width="13" height="13">
+        <label class="modal__label" for="email">Email
+            <svg class="modal-form__icon-mail" width="13" height="13">
               <use href="./images/sprite2.svg#icon-message "></use>
             </svg>
             <input class="modal__input"type="text" id="email" name="email" required="" />
             </label>
-          <label class="modal__label" for="textarea">Komentarz
+        <label class="modal__label" for="textarea">Komentarz
             <textarea  class="modal__textarea" name="textarea"  placeholder="Wprowadź tekst"></textarea>
           </label>
          <div class="checkbox-container">
-            <input class="web-checkbox" type="checkbox" name="consent" value="consent" required="">
+            <input class="checkbox-container__checked web-checkbox" type="checkbox" name="consent" value="consent" required="">
 
-            <label for="consent" class="checkbox-label">
+            <label for="consent" class="checkbox-container__label ">
               Oświadczam, iż akceptuję
               <a href="#">Regulamin</a> i
               <a href="#">Politykę Prywatności</a>.
