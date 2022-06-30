@@ -1,4 +1,4 @@
-*::before,s
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -10,8 +10,9 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
 }
+
 input:hover,
-:focus-visible {
+input:focus-visible {
   outline: none;
   border: 1px solid rgba(33, 150, 243, 1);
 }
