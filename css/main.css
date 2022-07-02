@@ -151,8 +151,6 @@ input:focus-visible {
 .header__container {
   display: flex;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
 }
 
@@ -350,8 +348,6 @@ input:focus-visible {
 }
 
 .team__members {
-  margin: 0 auto;
-  width: 1200px;
   padding: 0;
   display: flex;
   list-style: none;
